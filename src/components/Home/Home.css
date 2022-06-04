@@ -1,0 +1,13 @@
+.home_area {
+  font-size: 3rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 90vh;
+  padding: 100px;
+}
+@media screen and (max-width: 500px) {
+  .home_area {
+    font-size: 1.5rem;
+  }
+}

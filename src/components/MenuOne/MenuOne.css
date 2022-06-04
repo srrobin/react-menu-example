@@ -1,0 +1,57 @@
+nav {
+  position: fixed;
+  width: 100%;
+  height: 50px;
+  background: #0225b2;
+}
+.list {
+  list-style: none;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  transition: 0.4s ease;
+}
+.list a {
+  text-decoration: none;
+}
+.items {
+  color: #ffffff;
+  margin-right: 21px;
+  font-weight: 400;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+.hamburger {
+  position: absolute;
+  right: 15px;
+  top: 15px;
+  text-transform: uppercase;
+  color: #fff;
+  padding: 0 8px;
+  display: none;
+}
+a.active li {
+  color: #ffffff;
+  font-weight: 700;
+  text-decoration: none;
+}
+@media screen and (max-width: 500px) {
+  .hamburger {
+    display: block;
+  }
+  .list {
+    flex-direction: column;
+    background: #0336ff;
+    height: auto;
+    margin-top: 50px;
+    transition: 0.5s ease;
+  }
+  .items {
+    padding: 9px;
+    width: 100%;
+    text-align: center;
+    margin-right: 0;
+  }
+}
